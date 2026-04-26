@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko rendley.swan | wear confident, wear rendlley </title>
+    <style>
+        /* Gaya Visual Dasar */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #0c0707; }
+        
+        header { background: #19081f; color: rgb(249, 244, 244); padding: 30px; text-align: center; }
+        header h1 { margin: 0; letter-spacing: 2px; }
+
+        nav { background: #b38eb7; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: rgb(8, 9, 12); text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #100a0a; }
+
+        main { max-width: 1100px; margin: auto; padding: 20px; }
+        h2 { text-align: center; border-bottom: 2px solid #f6f3f6; padding-bottom: 10px; }
+
+        /* Grid Produk */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .product {
+            background: rgb(147, 115, 147);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(242, 237, 242, 0.941);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover { transform: translateY(-5px); }
+
+        /* 🔥 PERUBAHAN DI SINI (jadi persegi) */
+        .product img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 { margin: 15px 0 5px; }
+        .product p { color: #f3eef2; font-size: 0.9rem; }
+        .product span { display: block; font-weight: bold; color: #ebe3ec; font-size: 1.2rem; margin: 10px 0; }
+
+        button {
+            background: #ebe5eb;
+            color: rgb(205, 189, 189);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        button:hover { background: #a98a8e; }
+
+        /* Footer */
+        footer { background: #1c0225; color: rgb(245, 237, 244); padding: 40px 20px; text-align: center; }
+        .footer-menu ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; }
+        .footer-menu a { color: #aaa; text-decoration: none; }
+        .contact-info { margin: 20px 0; }
+        .social-media img { width: 30px; margin: 0 10px; filter: invert(1); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TOKO RENDLEY.SWAN</h1>
+        <p>Wear confident, wear rendlley</p>
+    </header>
+
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#featured-products">Unggulan</a>
+        <a href="#new-arrivals">Terbaru</a>
+        <a href="#">Tentang Kami</a>
+    </nav>
+
+    <main>
+        <section id="featured-products">
+            <h2>Rendley Picks</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Baju 1">
+                    <h3>Jaket Leather</h3>
+                    <p>Desai simple tapi terlihat nyaman</p>
+                    <span>Rp 1.999.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400" alt="Baju 2">
+                    <h3>Dress Midi</h3>
+                    <p>Cocok untuk gaya santai maupun semi-formal</p>
+                    <span>Rp 999.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-arrivals">
+            <h2>Style of The Week</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400" alt="Baju 3">
+                    <h3>Blouse elegant <h3>
+                    <p>Cocok untuk kerja, kuliah, atau hangout</p>
+                    <span>Rp 699.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Baju 1">
+                    <h3>One Set Leather</h3>
+                    <p>Desain modern dan fashionable</p>
+                    <span>Rp 1.999.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>Email: zahramaharin@gmail.com</p>
+            <p>WhatsApp: 0812-2066-9484</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.8rem; color: #666;">&copy; 2026 Toko rendley.swan. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
